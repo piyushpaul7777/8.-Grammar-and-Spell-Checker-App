@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar and Spell Checker App</title>
+</head>
+<body>
+    <h1>Grammar and Spell Checker App</h1>
+    <form action="/spell" method="post">
+        <label for="text">Enter text:</label><br>
+        <textarea id="text" name="text" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Check Spell and Grammar">
+    </form>
+    <h2>Corrected Text</h2>
+    <p>{{ corrected_text }}</p>
+    <h2>Grammar Mistakes</h2>
+    <p>{{ corrected_grammar }}</p>
+</body>
+</html>
